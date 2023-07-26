@@ -23,6 +23,23 @@ body {
   height: 100vh;
   background-color: var(--blue-1);
 }
+.search {
+  position: absolute;
+  z-index: 2;
+  top: 16px;
+  left: 16px;
+  width: 92%;
+  input {
+    width: 100%;
+    background-color: var(--shadow-light);
+    outline: none;
+    border: none;
+    border-radius: 16px;
+    padding: 1em;
+    color: var(--gray);
+    text-align: center;
+  }
+}
 .container {
   width: 400px;
   height: 80vh;
@@ -34,15 +51,12 @@ body {
   position: relative;
   border-radius: 16px 16px 0 0;
   overflow: hidden;
-  //   filter: grayscale(100%);
   width: 100%;
   height: 50%;
   img {
     position: absolute;
     top: 0;
     left: 0;
-    // left: -50%;
-    // width: 100%;
     height: 100%;
   }
 }
@@ -73,7 +87,6 @@ body {
   padding: 1em;
   position: relative;
   overflow: hidden;
-  //   filter: grayscale(100%);
   width: 100%;
   height: 50%;
   border-radius: 0 0 16px 16px;
